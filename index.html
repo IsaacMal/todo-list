@@ -7,11 +7,38 @@
   <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
-  <h1>Mi Lista de Tareas</h1>
-  <p>Nombre del estudiante: __________________________</p>
+  <main>
+    <section>
+      <form id="form-tarea">
+        <h1>Mi Lista de Tareas</h1>
+        <p>Nombre del Estudiante: Isaac Maldonado</p>
+        <label for="nombre">Nombre de la Tarea:</label>
+        <input type="text" id="nombre" name="nombre" required maxlength="25"/>
 
+        <label for="fecha">Fecha de Entrega:</label>
+        <input type="date" id="fecha" name="fecha" required />
+        
+        <label for="Descripcion">Descripción:</label>
+        <input type="text" id="Descripcion" name="comentarios" rows="4"  placeholder="Descripción de tu tarea" required></textarea>
+
+        <label for="tipo_tarea">Tipo de tarea:</label>
+        <select id="tipo_tarea" name="tipo_tarea" required>
+          <option value=""> - Seleccione un tipo </option>
+          <option value="Universidad">Universidad</option>
+          <option value="Personal">Personal</option>
+          <option value="Trabajo">Trabajo</option>
+          <option value="Hobby">Hobby</option>
+        </select>
+
+        <button type="submit" class="btn-plan"> Subir </button>
+      </form>
+    </section>
+  </main>
   <!-- Aquí irá el formulario y la lista generada con JavaScript -->
-
+  <aside id="lista">
+    <h2>Lista de tareas</h2>
+    <ul id="lista-tareas"></ul>
+    </aside>
   <script src="app.js"></script>
 </body>
 </html>
