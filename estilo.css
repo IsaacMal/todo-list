@@ -1,3 +1,27 @@
+/* Aplicando reglas universales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales del sitio */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dcfbf683;
+    color: #51c42e;
+}
+/* Definir el estilo del encabezado */
+header{
+    background-color: #2ec4b054;
+    padding: 20px;
+    text-align: centeR;
+}
+
+#lista-tarea li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 0.95rem;
+  }
 main{
     padding: 20px;
     text-align: center;
