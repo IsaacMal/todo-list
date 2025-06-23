@@ -1,0 +1,94 @@
+main{
+    padding: 20px;
+    text-align: center;
+    color: rgb(97, 230, 8);
+}
+main section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  form#form-tarea {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-cuadro, #1507dae1); 
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form#form-tarea label {
+    font-weight: bold;
+    color: var(--color-primario, #ffffff);
+    display: block;
+    margin-top: 12px;
+  }
+  
+  form#form-tarea input,
+  form#form-contacto select,
+  form#form-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 4px;
+    resize: vertical;
+  }
+  
+ 
+  form#form-tarea button.btn-plan {
+    align-self: center;
+    background-color: #2ec468;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    min-width: 150px;
+  }
+  
+  form#form-tarea button.btn-plan:hover {
+    background-color: #e6db7d;
+  }
+  
+  /*Diseño responsivo */
+  @media (max-width: 480px) {
+    main section {
+      padding: 15px;
+    }
+  
+    form#form-contacto {
+      max-width: 100%;
+      width: 100%;
+      padding: 20px;
+    }
+  
+    form#form-contacto button.btn-plan {
+      width: 100%;
+      min-width: unset;
+    }
+  
+    .btn-toast,
+    .btn-toast-aceptar,
+    .btn-toast-cancelar {
+      width: 100%;
+      margin: 6px 0;
+    }
+  
+    .toast-notificacion {
+      bottom: 10px;
+      right: 10px;
+      left: 10px;
+      width: auto;
+    }
+  }
